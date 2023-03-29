@@ -17,6 +17,13 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { RestritoComponent } from './restrito/restrito.component';
+import { AtualizaProdutoComponent } from './restrito/atualiza-produto/atualiza-produto.component';
+import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastro-produto.component';
+import { ListaProdutoComponent } from './restrito/lista-produto/lista-produto.component';
+import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.component';
+import { RestritoRoutingModule } from './restrito/restrito-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +31,12 @@ import { InicioComponent } from './inicio/inicio.component';
     InicioComponent,
     HomeComponent,
     RodapeComponent,
-    LoginComponent
+    LoginComponent,
+    RestritoComponent,
+    AtualizaProdutoComponent,
+    CadastroProdutoComponent,
+    ListaProdutoComponent,
+    MenuRestritoComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +50,8 @@ import { InicioComponent } from './inicio/inicio.component';
     MatMenuModule,
     MatGridListModule,
     MatFormFieldModule,
+    RestritoRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
